@@ -16,7 +16,7 @@ class CandyList extends Component {
             { this.props.candies.map(candy => (
                 <div key={candy.id}>
                     <h4>{candy.name}</h4>
-                    <img src={candy.imageUrl} />
+                    {/* <img src={candy.imageUrl} /> */}
                 </div>
                 ))
             }
