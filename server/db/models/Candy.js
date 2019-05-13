@@ -11,10 +11,11 @@ module.exports = db.define('candy', {
   quantity: {
     type: Sequelize.INTEGER,
     validate: {
+      min: 0,
       max: 10
     }
   },
-  imageURL: {
+  imageUrl: {
     type: Sequelize.STRING,
     defaultValue: 'png'
   }

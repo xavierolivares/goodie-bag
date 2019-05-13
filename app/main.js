@@ -7,7 +7,7 @@ import Root from './components/root'
 
 ReactDOM.render(
   <Provider store={store}>
-    <Root />
+    <Root candies={store}/>
   </Provider>,
   document.getElementById('main')
 )
